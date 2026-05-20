@@ -1,5 +1,3 @@
-# AgentLens
-
 Browser extension to record web app flows and generate AI-ready `BEHAVIOR.md` files.
 
 ## 🚀 Quick Start
