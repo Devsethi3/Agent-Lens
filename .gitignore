@@ -1,0 +1,39 @@
+# Dependency directories
+node_modules/
+.pnpm-debug.log*
+
+# Plasmo & Bundler directories
+.plasmo/
+.parcel-cache/
+.cache/
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.zip
+*.crx
+*.xpi
+
+# IDE & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System
+*.bak
+*.tmp
+*.temp

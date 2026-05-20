@@ -1,0 +1,88 @@
+{
+  "name": "agent-lens",
+  "version": "0.1.0",
+  "description": "Runtime behavior context for AI coding agents",
+  "private": true,
+  "scripts": {
+    "dev": "plasmo dev",
+    "dev:node": "node node_modules/plasmo/bin/index.mjs dev",
+    "build": "plasmo build",
+    "build:prod": "plasmo build --zip",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@expo/spawn-async": "^1.8.0",
+    "@plasmohq/messaging": "^0.6.2",
+    "@plasmohq/storage": "^1.15.0",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dexie": "^4.4.2",
+    "lucide-react": "^0.446.0",
+    "plasmo": "^0.90.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "^2.6.1",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/chrome": "^0.0.271",
+    "@types/node": "^25.9.1",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "change-case": "^5.4.4",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-react": "^7.37.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "postcss": "^8.5.15",
+    "prettier": "^3.8.3",
+    "sharp": "0.34.5",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
+  },
+  "manifest": {
+    "name": "AgentLens - AI Behavior Context",
+    "description": "Record web app flows and generate AI-ready BEHAVIOR.md files for Cursor, Windsurf, and Cline.",
+    "version": "1.0.0",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "overrides": {
+      "sharp": "0.34.5",
+      "@expo/spawn-async": "^1.8.0"
+    }
+  }
+}
