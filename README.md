@@ -1,4 +1,4 @@
-Browser extension to record web app flows and generate AI-ready `BEHAVIOR.md` files.
+Browser extension to record web app flows and generate AI-ready 
 
 ## 🚀 Quick Start
 
